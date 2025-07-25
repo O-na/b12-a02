@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
        </head>
 <body>
-<!---- top-->
-       <header class="  flex gap-160 m-20 mt-10">
-        <nav>
-            <img src="logo.png">
-        </nav>
-         <div>
-           <ul class="flex gap-5 mt-10 mb-5">
-             <li class="font-bold">Home</li>
-             <li>Shop</li>
-             <li>About Us</li>
-             <li class="flex gap-3"> <img class="h-5 w-5" src="shopping-cart (1).png">Cart ($56)</li>
-           </ul> 
-        </div>
-       </header>
+<header class="flex flex-col sm:flex-row justify-between items-center p-4 sm:px-20 gap-4">
+  <!-- Logo -->
+  <div>
+    <img src="logo.png" class="h-10 w-auto" alt="Logo" />
+  </div>
+
+  <!-- Nav + Cart -->
+  <div class="flex flex-col sm:flex-row items-center gap-6">
+    <nav class="flex gap-4 ">
+      <h1 class="font-bold">Home</h1>
+      <h1>Shop</h1>
+      <h1>About Us</h1>
+    </nav>
+    <div class="flex items-center gap-2">
+      <img src="shopping-cart (1).png" class="h-5 w-5" alt="Cart" />
+      <span class="text-sm md:text-base">Cart ($56)</span>
+    </div>
+  </div>
+</header>
+
+
+
 
                                              <!----bannere-->
-    <div class="flex m-20 mt-30">
+    <div class="flex m-10 mt-30">
          <div class=" mt-15">
           <h1 class="text-6xl">ALWAYS 
              <SPAN class="text-amber-600"> FRESH <br>FLOWERS</SPAN></h1>
@@ -41,7 +51,7 @@
         <p class="text-center mt-8">Indulge your senses with the beauty and fragrance of our fresh flower shop From classic roses to <br> exotic blooms, we offer a wide variety of fresh.</p>
       </div>
       
-      <div class="grid grid-cols-4 justify-items-center m-20 mt-20">
+      <div class="grid grid-cols-4 grid-rows-2 justify-items-center gap-4 m-20 mt-20">
            <div class="justify-items-center rounded text-center mt-10">
                   <img class="rounded-2xl" src="sample-flower-image.png">
                   <h1 class="text-2xl">Rose</h1>
@@ -96,7 +106,7 @@
                                               <!----middle part 2-->
        
        
-        <div class="flex m-20 mt-30 gap-15">
+        <div class="flex m-10 mt-30 gap-15">
              <div class="bg-[url('')]"><img src="flower-store.png"></div>
             
 
@@ -111,7 +121,7 @@
             </div>
         </div>
 <!---middle 3-->
-        <div class="justify-items-center m-20 mt-20 mb-40">
+        <div class="justify-items-center m-10 mt-20 mb-40">
           <h1 class="text-6xl"><span class="text-amber-600">Latest</span>Deals</h1>
           <p class="text-center p-10 pb-5">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
         </div>
@@ -164,7 +174,7 @@
         <!----footer-->
          
         <footer>
-             <div class=" flex gap-20 m-20">
+             <div class=" flex gap-30 m-8">
                    <div>
                     <img src="logo.png">
                     <p class="pt-5">Indulge your senses with the beauty and <br>fragrance of our fresh flower shop. </p>
@@ -183,7 +193,7 @@
                           <ol class="pt-4">Help Center</ol>
                         </ul>  
                    </div>
-                   <div class="flex  h-8 w-8 gap-5 ">
+                   <div class="flex  h-8 w-8 gap-10 ">
                          <img src="icon-facebook.png">
                          <img src="icon-twitter.png">
                          <img src="icon-linkedin.png">
